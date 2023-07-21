@@ -1,0 +1,289 @@
+/*
+Template Name: Material Pro Admin
+Author: Themedesigner
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+/*
+Template Name: Material Pro Admin
+Author: Themedesigner
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
+
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Light colors*/
+/*Normal Color*/
+/*Extra Variable*/
+/*Preloader*/
+.preloader {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  position: fixed;
+  z-index: 99999;
+  background: #fff;
+}
+
+.preloader .cssload-speeding-wheel {
+  position: absolute;
+  top: calc(50% - 3.5px);
+  left: calc(50% - 3.5px);
+}
+
+/*******************
+/*Top bar
+*******************/
+.topbar {
+  background: #D5BDAF;
+}
+
+.topbar .navbar-header {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.topbar .top-navbar .navbar-header .navbar-brand .dark-logo {
+  display: none;
+}
+
+.topbar .top-navbar .navbar-header .navbar-brand .light-logo {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.topbar .navbar-light .navbar-nav .nav-item>a.nav-link {
+  color: #ffffff !important;
+}
+
+.topbar .navbar-light .navbar-nav .nav-item>a.nav-link:hover,
+.topbar .navbar-light .navbar-nav .nav-item>a.nav-link:focus {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/*******************
+/*General Elements
+*******************/
+a {
+  color: #9B8579;
+}
+
+a.link:hover,
+a.link:focus {
+  color: #D5BDAF !important;
+}
+
+.bg-theme {
+  background-color: #D5BDAF !important;
+}
+
+.pagination>.active>a,
+.pagination>.active>span,
+.pagination>.active>a:hover,
+.pagination>.active>span:hover,
+.pagination>.active>a:focus,
+.pagination>.active>span:focus {
+  background-color: #9B8579;
+  border-color: #9B8579;
+}
+
+.right-sidebar .rpanel-title {
+  background: #9B8579;
+}
+
+.stylish-table tbody tr:hover,
+.stylish-table tbody tr.active {
+  border-left: 4px solid #9B8579;
+}
+
+.text-themecolor {
+  color: #9B8579 !important;
+}
+
+.profile-tab li a.nav-link.active,
+.customtab li a.nav-link.active {
+  border-bottom: 2px solid #9B8579;
+  color: #9B8579;
+}
+
+.profile-tab li a.nav-link:hover,
+.customtab li a.nav-link:hover {
+  color: #9B8579;
+}
+
+/*******************
+/*Buttons
+*******************/
+.btn-themecolor,
+.btn-themecolor.disabled {
+  background: #9B8579;
+  color: #ffffff;
+  border: 1px solid #9B8579;
+}
+
+.btn-themecolor:hover,
+.btn-themecolor.disabled:hover {
+  background: #9B8579;
+  opacity: 0.7;
+  border: 1px solid #9B8579;
+}
+
+.btn-themecolor.active,
+.btn-themecolor:focus,
+.btn-themecolor.disabled.active,
+.btn-themecolor.disabled:focus {
+  background: #D5BDAF;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #9B8579;
+  border-color: #9B8579;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #9B8579;
+  border-color: #9B8579;
+}
+
+/*******************
+/*sidebar navigation
+*******************/
+.sidebar-nav {
+  background: #fff;
+}
+
+.sidebar-nav ul li a {
+  color: #607d8b;
+}
+
+.sidebar-nav ul li a.active,
+.sidebar-nav ul li a:hover,
+.card-no-border .sidebar-nav>ul>li>a.active,
+.card-no-border .sidebar-nav>ul>li>a:hover {
+  color: #FFFFFF;
+  background-color: #D5BDAF;
+}
+
+.sidebar-nav ul li a.active {
+  color: #263238;
+}
+
+.sidebar-nav ul li.nav-small-cap {
+  color: #99abb4;
+}
+
+.sidebar-nav>ul>li.active>a,
+.sidebar-nav>ul>li.active:hover>a {
+  color: #ffffff;
+  background: #D5BDAF;
+}
+
+.sidebar-nav>ul>li.active>a i,
+.sidebar-nav>ul>li.active:hover>a i {
+  color: #ffffff;
+}
+
+.sidebar-nav>ul>li.active>a:after,
+.sidebar-nav>ul>li.active:hover>a:after {
+  border-color: #ffffff;
+}
+
+.sidebar-nav>ul>li>a.active i,
+.sidebar-nav>ul>li>a:hover i {
+  color: #FFFFFF;
+}
+
+.sidebar-nav>ul>li>a i {
+  color: #99abb4;
+}
+
+.sidebar-nav>ul>li>a.active {
+  font-weight: 400;
+  background: #ffffff;
+  color: #9B8579;
+}
+
+label.icheck {
+  display: block;
+  position: relative;
+  padding-left: 45px;
+  margin-bottom: 26px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type=checkbox] {
+  visibility: hidden;
+}
+
+span[class^="icheck-"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border-radius: 3px;
+  background-color: #F9F9F9F9;
+  border: solid 0.13rem #D5BDAF;
+}
+
+
+label.icheck:hover input~span.icheck-default {
+  background-color: #d5bdaf56;
+}
+
+label.icheck input:active~span.icheck-default {
+  background-color: #d5bdafb9;
+}
+
+label.icheck input:checked~span.icheck-default {
+  background-color: #D5BDAF;
+}
+
+label.icheck>span[class^="icheck"]:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+label.icheck input:checked~span:after {
+  display: block;
+}
+
+label.icheck>span:after {
+  left: 7px;
+  bottom: 5px;
+  width: 8px;
+  height: 14px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.form-control,
+.input-group-text {
+  font-size: 0.8rem !important;
+}
+
+
+
+
+
+
+.sidebar-nav>ul>li>a.active svg path,
+.sidebar-nav>ul>li>a:hover svg path {
+  color: #ffffff;
+}
+
+.sidebar-nav>ul>li>a svg path {
+  color: #99abb4;
+}
