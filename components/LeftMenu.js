@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import Icon from "@mdi/react";
+import LeftMenuLink from "./LeftMenuLink";
+
 import {
   mdiGauge,
   mdiPackageVariantClosed,
@@ -9,6 +10,8 @@ import {
 } from "@mdi/js";
 
 export default function LeftMenu() {
+
+
   return (
     <aside className="left-sidebar">
       {/* Sidebar scroll*/}
@@ -62,34 +65,15 @@ export default function LeftMenu() {
         {/* Sidebar navigation*/}
         <nav className="sidebar-nav">
           <ul id="sidebarnav">
-            <li>
-              <Link href="/" className="waves-effect waves-dark">
-                <Icon path={mdiGauge} size={1} />
-                <span className="hide-menu">Home</span>
-              </Link>
-            </li>
-            <li>
-              <Link className="waves-effect waves-dark" href="/products">
-                <Icon path={mdiPackageVariantClosed} size={1} />
-                <span className="hide-menu">Products</span>
-              </Link>
-            </li>
-            <li>
-              <a className="waves-effect waves-dark" href="/orders">
-                <Icon path={mdiPackageVariant} size={1} />
-                <span className="hide-menu">Orders</span>
-              </a>
-            </li>
-            <li>
-              <Link
-                className="has-arrow waves-effect waves-dark"
-                href="#"
-                aria-expanded="false"
-              >
-                <Icon path={mdiLaptop} size={1} />
-                <span className="hide-menu">Root</span>
-              </Link>
+            <LeftMenuLink href="/" iconPath={mdiGauge} title="Home" />
+            <LeftMenuLink href="/products" iconPath={mdiPackageVariantClosed} title="Products" />
+            <LeftMenuLink href="/orders" iconPath={mdiPackageVariant} title="Orders" />
+            <LeftMenuLink href="#" iconPath={mdiLaptop} title="Root" >
+
               <ul className="collapse">
+                <LeftMenuLink href="#" title="Sub 1" />
+
+
                 <li>
                   <Link href="#">Sub 1</Link>
                 </li>
@@ -103,7 +87,7 @@ export default function LeftMenu() {
                   <Link href="#">Sub 4</Link>
                 </li>
               </ul>
-            </li>
+            </LeftMenuLink>
           </ul>
         </nav>
         {/* End Sidebar navigation */}

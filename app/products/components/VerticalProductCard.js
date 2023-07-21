@@ -1,5 +1,7 @@
 "use client";
 import React from "react";
+import Icon from "@mdi/react";
+import { mdiBellRingOutline, mdiInfinity, mdiPlus } from "@mdi/js";
 
 export default function VerticalProductCard({ product }) {
   return (
@@ -50,7 +52,10 @@ export default function VerticalProductCard({ product }) {
                 data-bts-button-up-className="btn btn-secondary btn-outline"
               />
               <span className="input-group-addon bootstrap-touchspin-postfix input-group-append">
-                <span className="input-group-text">QR</span>
+                <span className="input-group-text">
+                  <span style={{ width: "1.5rem", height: "1.5rem" }}>QR</span>
+
+                </span>
               </span>
             </div>
           </div>
@@ -74,13 +79,15 @@ export default function VerticalProductCard({ product }) {
                     data-toggle="modal"
                     data-target=".inventory-notifications-modal"
                   >
-                    <i className="mdi mdi-bell-ring-outline"></i>
+                    <Icon path={mdiBellRingOutline} size={0.8} />
                   </button>
                 </span>
                 <span className="input-group-text" title="Infinite Inventory">
-                  <i className="mdi mdi-infinity"></i>
+                  <Icon path={mdiInfinity} size={0.8} />
                 </span>
-                <span className="input-group-text">Quantity Options</span>
+                <span className="input-group-text" title='Quantity Options'>
+                  Options
+                </span>
               </span>
             </div>
           </div>
@@ -106,7 +113,7 @@ export default function VerticalProductCard({ product }) {
                     data-toggle="modal"
                     data-target=".new-category-modal"
                   >
-                    <i className="mdi mdi-plus"></i>
+                    <Icon path={mdiPlus} size={1} />
                   </button>
                 </span>
               </span>
@@ -122,6 +129,7 @@ export default function VerticalProductCard({ product }) {
             title="Product Details"
             data-toggle="modal"
             data-target=".product-details-modal"
+            style={{ boxShadow: "none" }}
           >
             <i className="mdi mdi-tune"></i>
           </button>

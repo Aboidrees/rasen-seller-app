@@ -37,7 +37,7 @@ File: scss
 /*Top bar
 *******************/
 .topbar {
-  background: #D5BDAF;
+  background: #D5BDAF !important;
 }
 
 .topbar .navbar-header {
@@ -84,17 +84,17 @@ a.link:focus {
 .pagination>.active>span:hover,
 .pagination>.active>a:focus,
 .pagination>.active>span:focus {
-  background-color: #9B8579;
-  border-color: #9B8579;
+  background-color: #9B8579 !important;
+  border-color: #9B8579 !important;
 }
 
 .right-sidebar .rpanel-title {
-  background: #9B8579;
+  background: #9B8579 !important;
 }
 
 .stylish-table tbody tr:hover,
 .stylish-table tbody tr.active {
-  border-left: 4px solid #9B8579;
+  border-left: 4px solid #9B8579 !important;
 }
 
 .text-themecolor {
@@ -103,13 +103,13 @@ a.link:focus {
 
 .profile-tab li a.nav-link.active,
 .customtab li a.nav-link.active {
-  border-bottom: 2px solid #9B8579;
-  color: #9B8579;
+  border-bottom: 2px solid #9B8579 !important;
+  color: #9B8579 !important;
 }
 
 .profile-tab li a.nav-link:hover,
 .customtab li a.nav-link:hover {
-  color: #9B8579;
+  color: #9B8579 !important;
 }
 
 /*******************
@@ -117,39 +117,62 @@ a.link:focus {
 *******************/
 .btn-themecolor,
 .btn-themecolor.disabled {
-  background: #9B8579;
+  background: #9B8579 !important;
   color: #ffffff;
-  border: 1px solid #9B8579;
+  border: 1px solid #9B8579 !important;
 }
 
 .btn-themecolor:hover,
 .btn-themecolor.disabled:hover {
-  background: #9B8579;
+  background: #9B8579 !important;
   opacity: 0.7;
-  border: 1px solid #9B8579;
+  border: 1px solid #9B8579 !important;
 }
 
 .btn-themecolor.active,
 .btn-themecolor:focus,
 .btn-themecolor.disabled.active,
 .btn-themecolor.disabled:focus {
-  background: #D5BDAF;
+  background: #D5BDAF !important;
 }
 
+.btn.focus,
+.btn:focus {
+  box-shadow: 0 0 0 0.2rem #D5BDAF64;
+}
+
+.btn-primary,
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+  color: #fff !important;
+  background-color: #D5BDAF !important;
+  border-color: #D5BDAF !important;
+  box-shadow: 0 2px 2px 0 #9B857936, 0 3px 1px -2px #9B857951, 0 1px 5px 0 #9B857930;
+  transition: 0.2s ease-in;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.show>.btn-outline-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #D5BDAF;
+  border-color: #9b8579ac;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-outline-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem #D5BDAF64;
+}
+
+.btn-primary.active,
 .btn-primary:not(:disabled):not(.disabled).active,
 .btn-primary:not(:disabled):not(.disabled):active,
 .show>.btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #9B8579;
-  border-color: #9B8579;
-}
-
-.btn-primary:not(:disabled):not(.disabled).active,
-.btn-primary:not(:disabled):not(.disabled):active,
-.show>.btn-primary.dropdown-toggle {
-  color: #fff;
-  background-color: #9B8579;
-  border-color: #9B8579;
+  background-color: #9B8579 !important;
+  border-color: #9B8579 !important;
 }
 
 /*******************
@@ -168,7 +191,7 @@ a.link:focus {
 .card-no-border .sidebar-nav>ul>li>a.active,
 .card-no-border .sidebar-nav>ul>li>a:hover {
   color: #FFFFFF;
-  background-color: #D5BDAF;
+  background-color: #D5BDAF !important;
 }
 
 .sidebar-nav ul li a.active {
@@ -182,7 +205,7 @@ a.link:focus {
 .sidebar-nav>ul>li.active>a,
 .sidebar-nav>ul>li.active:hover>a {
   color: #ffffff;
-  background: #D5BDAF;
+  background: #D5BDAF !important;
 }
 
 .sidebar-nav>ul>li.active>a i,
@@ -195,25 +218,18 @@ a.link:focus {
   border-color: #ffffff;
 }
 
-.sidebar-nav>ul>li>a.active i,
-.sidebar-nav>ul>li>a:hover i {
-  color: #FFFFFF;
-}
+
 
 .sidebar-nav>ul>li>a i {
   color: #99abb4;
 }
 
-.sidebar-nav>ul>li>a.active {
-  font-weight: 400;
-  background: #ffffff;
-  color: #9B8579;
-}
+
 
 label.icheck {
   display: block;
   position: relative;
-  padding-left: 45px;
+  padding-left: 26px;
   margin-bottom: 26px;
   cursor: pointer;
   font-size: 16px;
@@ -231,7 +247,7 @@ span[class^="icheck-"] {
   width: 25px;
   border-radius: 3px;
   background-color: #F9F9F9F9;
-  border: solid 0.13rem #D5BDAF;
+  border: solid 0.13rem #D5BDAF !important;
 }
 
 
@@ -244,7 +260,7 @@ label.icheck input:active~span.icheck-default {
 }
 
 label.icheck input:checked~span.icheck-default {
-  background-color: #D5BDAF;
+  background-color: #D5BDAF !important;
 }
 
 label.icheck>span[class^="icheck"]:after {
@@ -275,15 +291,17 @@ label.icheck>span:after {
 }
 
 
-
-
+.sidebar-nav>ul>li>a svg {
+  margin-inline-end: 0.6rem !important;
+}
 
 
 .sidebar-nav>ul>li>a.active svg path,
-.sidebar-nav>ul>li>a:hover svg path {
-  color: #ffffff;
+.sidebar-nav>ul>li>a:hover svg path,
+.sidebar-nav>ul>li>a[aria-expanded="true"] svg path {
+  color: #ffffff !important;
 }
 
 .sidebar-nav>ul>li>a svg path {
-  color: #99abb4;
+  color: #99abb4 !important;
 }
