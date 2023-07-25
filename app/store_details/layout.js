@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@assets/css/style.css";
@@ -41,12 +42,12 @@ export default function RegisterLayout({ children }) {
 
         <section
           id="wrapper"
-          className="login-register"
+          className="login-register login-sidebar"
           style={{
-            backgroundImage: `url(assets/images/background/login-register.jpg)`,
+            backgroundImage: `url(assets/images/background/arabian-Horse.jpg)`,
           }}
         >
-          <div className="card m-auto w-50">
+          <div className="login-box card">
             <div className="card-body">
               <StoreDetailsProvider>{children}</StoreDetailsProvider>
             </div>

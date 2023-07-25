@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Link from "next/link";
 import LeftMenuLink from "./LeftMenuLink";
@@ -7,7 +8,9 @@ import {
   mdiPackageVariantClosed,
   mdiPackageVariant,
   mdiLaptop,
+  mdiPower,
 } from "@mdi/js";
+import Icon from "@mdi/react";
 
 export default function LeftMenu() {
   return (
@@ -96,15 +99,25 @@ export default function LeftMenu() {
         </nav>
       </div>
       <div className="sidebar-footer">
-        <a href="" className="link" data-toggle="tooltip" title="Settings">
+        <Link
+          href=""
+          className="link float-left"
+          data-toggle="tooltip"
+          title="Settings"
+        >
           <i className="ti-settings"></i>
-        </a>
-        <a href="" className="link" data-toggle="tooltip" title="Email">
-          <i className="mdi mdi-gmail"></i>
-        </a>
-        <a href="" className="link" data-toggle="tooltip" title="Logout">
-          <i className="mdi mdi-power"></i>
-        </a>
+        </Link>
+        {/* <Link href="" className="link" data-toggle="tooltip" title="Email">
+          <Icon path={mdiGmail} size={1} />
+        </Link> */}
+        <Link
+          href="/login"
+          className="link float-right"
+          data-toggle="tooltip"
+          title="Logout"
+        >
+          <Icon path={mdiPower} size={1} />
+        </Link>
       </div>
     </aside>
   );

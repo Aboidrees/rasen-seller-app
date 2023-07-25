@@ -1,14 +1,17 @@
-import CheckBox from "@components/CheckBox";
-import Link from "next/link";
+"use client";
+
 import React from "react";
+import Link from "next/link";
 import { Image } from "react-bootstrap";
+import CheckBox from "@components/CheckBox";
+
 export default function RegisterScreen() {
   return (
     <>
       <form className="form-horizontal form-material" id="loginform">
         <a href="#" className="text-center db">
           <Image
-            src={"/assets/images/logo-icon.png"}
+            src="/assets/images/logo-icon.png"
             width={160}
             height={160}
             alt="Home"
@@ -51,12 +54,13 @@ export default function RegisterScreen() {
         </div>
         <div className="form-group text-center m-t-20">
           <div className="col-xs-12">
-            <button
+            <Link
+              href="/dashboard"
               className="btn btn-primary btn-lg btn-block text-uppercase waves-effect waves-light"
               type="submit"
             >
               Log In
-            </button>
+            </Link>
           </div>
         </div>
         <div className="row">
@@ -97,7 +101,7 @@ export default function RegisterScreen() {
           <div className="col-xs-12">
             <h3>Recover Password</h3>
             <p className="text-muted">
-              Enter your Email and instructions will be sent to you!{" "}
+              Enter your Email and instructions will be sent to you!
             </p>
           </div>
         </div>

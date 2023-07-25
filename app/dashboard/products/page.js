@@ -1,14 +1,18 @@
+"use client";
+import "@assets/plugins/dropzone-master/dist/dropzone.css";
+
 import React from "react";
 import VerticalProductCard from "./components/VerticalProductCard";
 import HorizontalProductCard from "./components/HorizontalProductCard";
 import Icon from "@mdi/react";
 import { mdiPlusCircle } from "@mdi/js";
+import { Col, Row } from "react-bootstrap";
 
 export default function ProductsPage() {
   return (
     <div className="fluid-container">
-      <div className="row mb-4">
-        <div className="col-10">
+      <Row className="mb-4">
+        <Col xl={10}>
           <button
             type="button"
             className="btn btn-primary btn-rounded text-white"
@@ -16,36 +20,36 @@ export default function ProductsPage() {
             Add New Product &nbsp;&nbsp;
             <Icon path={mdiPlusCircle} size={1} />
           </button>
-        </div>
-        <div className="col-2 text-right">
+        </Col>
+        <Col xl={2} className="text-right">
           <button className="btn">
             Filter <i className="mdi mdi-filter"></i>
           </button>
-        </div>
-      </div>
+        </Col>
+      </Row>
 
-      <div className="row">
-        <div className="col-lg-3 col-md-4 col-sm-12">
-          <VerticalProductCard />
-        </div>
-        <div className="col-lg-3 col-md-4 col-sm-12">
+      <Row>
+        <Col xxl={2} xl={3} lg={4}>
+          <VerticalProductCard product={false} />
+        </Col>
+        <Col xl={3} lg={4}>
           <VerticalProductCard product={true} />
-        </div>
-        <div className="col-lg-3 col-md-4 col-sm-12">
+        </Col>
+        <Col xl={3} lg={4}>
           <VerticalProductCard product={true} />
-        </div>
-        <div className="col-lg-3 col-md-4 col-sm-12">
+        </Col>
+        <Col xl={3} lg={4}>
           <VerticalProductCard product={true} />
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-12">
-          <HorizontalProductCard />
-        </div>
-        <div className="col-12">
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <HorizontalProductCard product={false} />
+        </Col>
+        <Col>
           <HorizontalProductCard product={true} />
-        </div>
-      </div>
+        </Col>
+      </Row>
     </div>
   );
 }

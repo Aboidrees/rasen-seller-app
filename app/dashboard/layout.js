@@ -1,8 +1,7 @@
 import React from "react";
-// import "../public/assets/plugins/bootstrap/css/bootstrap.min.css";
+// import "@assets/plugins/bootstrap/css/bootstrap.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@assets/plugins/html5-editor/bootstrap-wysihtml5.css";
-import "@assets/plugins/dropzone-master/dist/dropzone.css";
 import "@assets/plugins/c3-master/c3.min.css";
 import "@assets/css/style.css";
 import "@assets/css/colors/default.css";
@@ -35,6 +34,7 @@ export default function RootLayout({ children }) {
       <Script src="/assets/plugins/c3-master/c3.min.js" />
       <Script src="/assets/js/dashboard1.js" />
       <Script src="/assets/plugins/styleswitcher/jQuery.style.switcher.js" />
+
       <body className="fix-header fix-sidebar card-no-border">
         <div className="preloader">
           <svg className="circular" viewBox="25 25 50 50">

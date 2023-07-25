@@ -43,7 +43,7 @@ export default function RegisterLayout({ children }) {
           id="wrapper"
           className="login-register login-sidebar"
           style={{
-            backgroundImage: `url(assets/images/background/login-register.jpg)`,
+            backgroundImage: `url(assets/images/background/arabian-Horse.jpg)`,
           }}
         >
           <div className="login-box card">

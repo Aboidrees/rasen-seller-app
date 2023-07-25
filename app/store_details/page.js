@@ -1,37 +1,47 @@
 "use client";
 import React from "react";
-import { Button, Form, Col, Row, ButtonGroup } from "react-bootstrap";
-import { useStoreDetailsContext } from "./context";
 import Icon from "@mdi/react";
+import { useRouter } from "next/navigation";
+import { Button, Form, ButtonGroup, Image } from "react-bootstrap";
 import {
   mdiChevronDoubleLeft,
   mdiChevronDoubleRight,
   mdiFloppy,
 } from "@mdi/js";
 
+import { useStoreDetailsContext } from "./context";
+
 const totalSteps = 4;
 
 export default function StoreDetailsPage() {
   const { step } = useStoreDetailsContext();
 
-  switch (step) {
-    case 1:
-      return <StoreNameAndDetails />;
-    case 2:
-      return <StoreAddress />;
-    case 3:
-      return <StoreLicense />;
-    case 4:
-      return <StoreLogoAndBackground />;
-  }
+  return (
+    <Form style={{ minHeight: "100vh" }}>
+      <a href="#" className="text-center db">
+        <Image
+          src="/assets/images/logo-icon.png"
+          width={160}
+          height={160}
+          alt="Home"
+        />
+      </a>
+      <h3 className="box-title m-b-20">Store Details</h3>
+
+      {step === 1 && <StoreNameAndDetails />}
+      {step === 2 && <StoreAddress />}
+      {step === 3 && <StoreLicense />}
+      {step === 4 && <StoreLogoAndBackground />}
+    </Form>
+  );
 }
 
 const StoreNameAndDetails = () => {
   const { step } = useStoreDetailsContext();
 
   return (
-    <Form>
-      <h3 className="box-title m-b-20">Store Details</h3>
+    <>
+      <h6 className="box-title m-b-20">Store Name & Description</h6>
       <Form.Group className="mb-3">
         <Form.Control placeholder="Store Name" />
       </Form.Group>
@@ -40,7 +50,7 @@ const StoreNameAndDetails = () => {
       </Form.Group>
 
       <WizardButtons onNext={() => {}} />
-    </Form>
+    </>
   );
 };
 
@@ -48,8 +58,8 @@ const StoreAddress = () => {
   const { step } = useStoreDetailsContext();
 
   return (
-    <Form>
-      <h3 className="box-title m-b-20">Store Details</h3>
+    <>
+      <h6 className="box-title m-b-20">Store Address & Geo Location</h6>
       <Form.Group className="mb-3">
         <Form.Control placeholder="Store Address" as="textarea" rows={4} />
       </Form.Group>
@@ -57,7 +67,7 @@ const StoreAddress = () => {
         <Form.Control disabled={true} placeholder="Geo Location" />
       </Form.Group>
       <WizardButtons onNext={() => {}} />
-    </Form>
+    </>
   );
 };
 
@@ -65,8 +75,8 @@ const StoreLicense = () => {
   const { step } = useStoreDetailsContext();
 
   return (
-    <Form>
-      <h3 className="box-title m-b-20">Store Details</h3>
+    <>
+      <h6 className="box-title m-b-20">Store License Document</h6>
       <Form.Group className="mb-3">
         <Form.Control
           type="file"
@@ -75,16 +85,17 @@ const StoreLicense = () => {
         />
       </Form.Group>
       <WizardButtons onNext={() => {}} />
-    </Form>
+    </>
   );
 };
 
 const StoreLogoAndBackground = () => {
   const { step } = useStoreDetailsContext();
+  const router = useRouter();
 
   return (
-    <Form>
-      <h3 className="box-title m-b-20">Store Details</h3>
+    <>
+      <h6 className="box-title m-b-20">Store Logo & Background</h6>
       <Form.Group className="mb-3">
         <Form.Control
           type="file"
@@ -99,8 +110,8 @@ const StoreLogoAndBackground = () => {
           title="Upload store background"
         />
       </Form.Group>
-      <WizardButtons onNext={() => {}} />
-    </Form>
+      <WizardButtons onNext={() => router.push("/dashboard")} />
+    </>
   );
 };
 
