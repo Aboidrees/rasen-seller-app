@@ -10,8 +10,6 @@ import {
 } from "@mdi/js";
 
 export default function LeftMenu() {
-
-
   return (
     <aside className="left-sidebar">
       {/* Sidebar scroll*/}
@@ -20,13 +18,13 @@ export default function LeftMenu() {
         <div
           className="user-profile"
           style={{
-            backgroundImage: `url("assets/images/background/user-info.jpg")`,
+            backgroundImage: `url(/assets/images/background/user-info.jpg)`,
             backgroundRepeat: "no-repeat",
           }}
         >
           {/* User profile image */}
           <div className="profile-img">
-            <img src="assets/images/users/profile.png" alt="user" />
+            <img src="/assets/images/users/profile.png" alt="user" />
           </div>
           {/* User profile text*/}
           <div className="profile-text">
@@ -65,14 +63,20 @@ export default function LeftMenu() {
         {/* Sidebar navigation*/}
         <nav className="sidebar-nav">
           <ul id="sidebarnav">
-            <LeftMenuLink href="/" iconPath={mdiGauge} title="Home" />
-            <LeftMenuLink href="/products" iconPath={mdiPackageVariantClosed} title="Products" />
-            <LeftMenuLink href="/orders" iconPath={mdiPackageVariant} title="Orders" />
-            <LeftMenuLink href="#" iconPath={mdiLaptop} title="Root" >
-
+            <LeftMenuLink href="/dashboard" iconPath={mdiGauge} title="Home" />
+            <LeftMenuLink
+              href="/dashboard/products"
+              iconPath={mdiPackageVariantClosed}
+              title="Products"
+            />
+            <LeftMenuLink
+              href="/dashboard/orders"
+              iconPath={mdiPackageVariant}
+              title="Orders"
+            />
+            <LeftMenuLink href="#" iconPath={mdiLaptop} title="Root">
               <ul className="collapse">
                 <LeftMenuLink href="#" title="Sub 1" />
-
 
                 <li>
                   <Link href="#">Sub 1</Link>
@@ -90,25 +94,18 @@ export default function LeftMenu() {
             </LeftMenuLink>
           </ul>
         </nav>
-        {/* End Sidebar navigation */}
       </div>
-      {/* End Sidebar scroll*/}
-      {/* Bottom points*/}
       <div className="sidebar-footer">
-        {/* item*/}
         <a href="" className="link" data-toggle="tooltip" title="Settings">
           <i className="ti-settings"></i>
         </a>
-        {/* item*/}
         <a href="" className="link" data-toggle="tooltip" title="Email">
           <i className="mdi mdi-gmail"></i>
         </a>
-        {/* item*/}
         <a href="" className="link" data-toggle="tooltip" title="Logout">
           <i className="mdi mdi-power"></i>
         </a>
       </div>
-      {/* End Bottom points*/}
     </aside>
   );
 }

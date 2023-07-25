@@ -12,13 +12,13 @@ export default function Navbar() {
               {/*You can put here icon as well // <i className="wi wi-sunset"></i> //*/}
               {/* Dark Logo icon */}
               <img
-                src="assets/images/logo-icon.png"
+                src="/assets/images/logo-icon.png"
                 alt="homepage"
                 className="dark-logo"
               />
               {/* Light Logo icon */}
               <img
-                src="assets/images/logo-light-icon.png"
+                src="/assets/images/logo-light-icon.png"
                 alt="homepage"
                 className="light-logo"
               />
@@ -28,13 +28,13 @@ export default function Navbar() {
             <span>
               {/* dark Logo text */}
               <img
-                src="assets/images/logo-text.png"
+                src="/assets/images/logo-text.png"
                 alt="homepage"
                 className="dark-logo"
               />
               {/* Light Logo text */}
               <img
-                src="assets/images/logo-light-text.png"
+                src="/assets/images/logo-light-text.png"
                 className="light-logo"
                 alt="homepage"
               />
@@ -115,7 +115,7 @@ export default function Navbar() {
                           <div className="container">
                             <img
                               className="d-block img-fluid"
-                              src="assets/images/big/img1.jpg"
+                              src="/assets/images/big/img1.jpg"
                               alt="First slide"
                             />
                           </div>
@@ -124,7 +124,7 @@ export default function Navbar() {
                           <div className="container">
                             <img
                               className="d-block img-fluid"
-                              src="assets/images/big/img2.jpg"
+                              src="/assets/images/big/img2.jpg"
                               alt="Second slide"
                             />
                           </div>
@@ -133,7 +133,7 @@ export default function Navbar() {
                           <div className="container">
                             <img
                               className="d-block img-fluid"
-                              src="assets/images/big/img3.jpg"
+                              src="/assets/images/big/img3.jpg"
                               alt="Third slide"
                             />
                           </div>
@@ -465,7 +465,7 @@ export default function Navbar() {
                       <a href="#">
                         <div className="user-img">
                           <img
-                            src="assets/images/users/1.jpg"
+                            src="/assets/images/users/1.jpg"
                             alt="user"
                             className="img-circle"
                           />
@@ -483,7 +483,7 @@ export default function Navbar() {
                       <a href="#">
                         <div className="user-img">
                           <img
-                            src="assets/images/users/2.jpg"
+                            src="/assets/images/users/2.jpg"
                             alt="user"
                             className="img-circle"
                           />
@@ -501,7 +501,7 @@ export default function Navbar() {
                       <a href="#">
                         <div className="user-img">
                           <img
-                            src="assets/images/users/3.jpg"
+                            src="/assets/images/users/3.jpg"
                             alt="user"
                             className="img-circle"
                           />
@@ -517,7 +517,7 @@ export default function Navbar() {
                       <a href="#">
                         <div className="user-img">
                           <img
-                            src="assets/images/users/4.jpg"
+                            src="/assets/images/users/4.jpg"
                             alt="user"
                             className="img-circle"
                           />
@@ -560,7 +560,7 @@ export default function Navbar() {
                 aria-expanded="false"
               >
                 <img
-                  src="assets/images/users/1.jpg"
+                  src="/assets/images/users/1.jpg"
                   alt="user"
                   className="profile-pic"
                 />
@@ -570,7 +570,7 @@ export default function Navbar() {
                   <li>
                     <div className="dw-user-box">
                       <div className="u-img">
-                        <img src="assets/images/users/1.jpg" alt="user" />
+                        <img src="/assets/images/users/1.jpg" alt="user" />
                       </div>
                       <div className="u-text">
                         <h4>Steave Jobs</h4>

@@ -1,9 +1,11 @@
-import "../public/assets/plugins/bootstrap/css/bootstrap.min.css";
-import "../public/assets/plugins/html5-editor/bootstrap-wysihtml5.css";
-import "../public/assets/plugins/dropzone-master/dist/dropzone.css";
-import "../public/assets/plugins/c3-master/c3.min.css";
-import "../public/assets/css/style.css";
-import "../public/assets/css/colors/default.css";
+import React from "react";
+// import "../public/assets/plugins/bootstrap/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "@assets/plugins/html5-editor/bootstrap-wysihtml5.css";
+import "@assets/plugins/dropzone-master/dist/dropzone.css";
+import "@assets/plugins/c3-master/c3.min.css";
+import "@assets/css/style.css";
+import "@assets/css/colors/default.css";
 
 import Script from "next/script";
 import BreadCrumb from "@components/BreadCrumb";
@@ -20,20 +22,19 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Script src="assets/plugins/jquery/jquery.min.js" />
-      <Script src="assets/plugins/popper/popper.min.js" />
-      <Script src="assets/plugins/bootstrap/js/bootstrap.min.js" />
-      <Script src="assets/js/jquery.slimscroll.js" />
-      <Script src="assets/js/waves.js" />
-      <Script src="assets/js/sidebarmenu.js" />
-      <Script src="assets/plugins/sticky-kit-master/dist/sticky-kit.min.js" />
-      <Script src="assets/plugins/sparkline/jquery.sparkline.min.js" />
-      <Script src="assets/js/custom.min.js" />
-      <Script src="assets/plugins/d3/d3.min.js" />
-      <Script src="assets/plugins/c3-master/c3.min.js" />
-      <Script src="assets/js/dashboard1.js" />
-      <Script src="assets/plugins/styleswitcher/jQuery.style.switcher.js" />
-
+      <Script src="/assets/plugins/jquery/jquery.min.js" />
+      <Script src="/assets/plugins/popper/popper.min.js" />
+      <Script src="/assets/plugins/bootstrap/js/bootstrap.min.js" />
+      <Script src="/assets/js/jquery.slimscroll.js" />
+      <Script src="/assets/js/waves.js" />
+      <Script src="/assets/js/sidebarmenu.js" />
+      <Script src="/assets/plugins/sticky-kit-master/dist/sticky-kit.min.js" />
+      <Script src="/assets/plugins/sparkline/jquery.sparkline.min.js" />
+      <Script src="/assets/js/custom.min.js" />
+      <Script src="/assets/plugins/d3/d3.min.js" />
+      <Script src="/assets/plugins/c3-master/c3.min.js" />
+      <Script src="/assets/js/dashboard1.js" />
+      <Script src="/assets/plugins/styleswitcher/jQuery.style.switcher.js" />
       <body className="fix-header fix-sidebar card-no-border">
         <div className="preloader">
           <svg className="circular" viewBox="25 25 50 50">

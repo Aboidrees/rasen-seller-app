@@ -10460,8 +10460,18 @@ pre {
 }
 
 
-.no-shadow {
-  box-shadow: none;
+.no-shadow,
+.no-shadow:active,
+.no-shadow:focus,
+.no-shadow:hover {
+  box-shadow: none !important;
+}
+
+.no-border,
+.no-border:active,
+.no-border:focus,
+.no-border:hover {
+  border: none !important;
 }
 
 .input-group-append {

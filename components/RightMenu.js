@@ -134,7 +134,7 @@ export default function RightMenu() {
             <li>
               <a href="javascript:void(0)">
                 <img
-                  src="assets/images/users/1.jpg"
+                  src="/assets/images/users/1.jpg"
                   alt="user-img"
                   className="img-circle"
                 />
@@ -147,7 +147,7 @@ export default function RightMenu() {
             <li>
               <a href="javascript:void(0)">
                 <img
-                  src="assets/images/users/2.jpg"
+                  src="/assets/images/users/2.jpg"
                   alt="user-img"
                   className="img-circle"
                 />
@@ -160,7 +160,7 @@ export default function RightMenu() {
             <li>
               <a href="javascript:void(0)">
                 <img
-                  src="assets/images/users/3.jpg"
+                  src="/assets/images/users/3.jpg"
                   alt="user-img"
                   className="img-circle"
                 />
@@ -173,7 +173,7 @@ export default function RightMenu() {
             <li>
               <a href="javascript:void(0)">
                 <img
-                  src="assets/images/users/4.jpg"
+                  src="/assets/images/users/4.jpg"
                   alt="user-img"
                   className="img-circle"
                 />
@@ -186,7 +186,7 @@ export default function RightMenu() {
             <li>
               <a href="javascript:void(0)">
                 <img
-                  src="assets/images/users/5.jpg"
+                  src="/assets/images/users/5.jpg"
                   alt="user-img"
                   className="img-circle"
                 />
@@ -199,7 +199,7 @@ export default function RightMenu() {
             <li>
               <a href="javascript:void(0)">
                 <img
-                  src="assets/images/users/6.jpg"
+                  src="/assets/images/users/6.jpg"
                   alt="user-img"
                   className="img-circle"
                 />
@@ -211,7 +211,7 @@ export default function RightMenu() {
             <li>
               <a href="javascript:void(0)">
                 <img
-                  src="assets/images/users/7.jpg"
+                  src="/assets/images/users/7.jpg"
                   alt="user-img"
                   className="img-circle"
                 />
@@ -223,7 +223,7 @@ export default function RightMenu() {
             <li>
               <a href="javascript:void(0)">
                 <img
-                  src="assets/images/users/8.jpg"
+                  src="/assets/images/users/8.jpg"
                   alt="user-img"
                   className="img-circle"
                 />

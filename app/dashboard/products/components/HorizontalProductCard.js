@@ -1,41 +1,44 @@
-import React from 'react'
-
+import React from "react";
+import Image from "next/image";
 import Icon from "@mdi/react";
 import { mdiBellRingOutline, mdiInfinity, mdiPlus } from "@mdi/js";
+import productPlaceholder from "@assets/images/big/img1.jpg";
 
 export default function HorizontalProductCard({ product }) {
-
   return (
     <div className="card">
       <div className="card-body">
-
-
-        <div className="row">
-
-        </div>
-
-
         <div className="row">
           <div className="col-1 col-content-width">
-            {product ? <label className="icheck">
-              <input type="checkbox" />
-              <span className="icheck-default"></span>
-            </label> : <button
-              className="btn btn-danger btn-circle p-0"
-              style={{ height: 26 + "px", width: 26 + "px" }}
-            >
-              <i className="mdi mdi-close"></i>
-            </button>}
+            {product ? (
+              <label className="icheck">
+                <input type="checkbox" />
+                <span className="icheck-default"></span>
+              </label>
+            ) : (
+              <button
+                className="btn btn-danger btn-circle p-0"
+                style={{ height: 26 + "px", width: 26 + "px" }}
+              >
+                <i className="mdi mdi-close"></i>
+              </button>
+            )}
           </div>
           <div className="col-2 col-content-width pl-0 pr-1">
-            <img
-              src="assets/images/big/img1.jpg"
-              style={{ width: 92, aspectRatio: 1, objectFit: "cover", borderRadius: 5 }}
-
+            <Image
+              src={productPlaceholder}
+              alt="Product SEO"
+              width={84}
+              height={84}
+              style={{
+                aspectRatio: 1,
+                objectFit: "cover",
+                borderRadius: 5,
+              }}
             />
           </div>
           <div className="col-8 pr-1 pl-1">
-            <div className='row m-0'>
+            <div className="row m-0">
               <div className="form-group col-8 pr-1 pl-1 mb-2">
                 <input
                   type="text"
@@ -55,7 +58,9 @@ export default function HorizontalProductCard({ product }) {
                   />
                   <span className="input-group-addon bootstrap-touchspin-postfix input-group-append">
                     <span className="input-group-text">
-                      <span style={{ width: "1.5rem", height: "1.5rem" }}>QR</span>
+                      <span style={{ width: "1.5rem", height: "1.5rem" }}>
+                        QR
+                      </span>
                     </span>
                   </span>
                 </div>
@@ -73,15 +78,10 @@ export default function HorizontalProductCard({ product }) {
                     <span
                       className="input-group-text"
                       title="New category"
+                      data-toggle="modal"
+                      data-target=".inventory-notifications-modal"
                     >
-                      <button
-                        type="button"
-                        className="btn btn-sm"
-                        data-toggle="modal"
-                        data-target=".inventory-notifications-modal"
-                      >
-                        <Icon path={mdiBellRingOutline} size={0.8} />
-                      </button>
+                      <Icon path={mdiBellRingOutline} size={0.8} />
                     </span>
                     <span
                       className="input-group-text"
@@ -89,7 +89,7 @@ export default function HorizontalProductCard({ product }) {
                     >
                       <Icon path={mdiInfinity} size={0.8} />
                     </span>
-                    <span className="input-group-text" title='Quantity Options'>
+                    <span className="input-group-text" title="Quantity Options">
                       Options
                     </span>
                   </span>
@@ -117,7 +117,6 @@ export default function HorizontalProductCard({ product }) {
                       title="New category"
                       data-toggle="modal"
                       data-target=".new-category-modal"
-
                     >
                       <Icon path={mdiPlus} size={1} />
                     </span>
@@ -128,8 +127,12 @@ export default function HorizontalProductCard({ product }) {
             </div>
           </div>
           <div className="col-2 text-center">
-
-            <div class="btn-group mb-2" style={{ width: "100%" }} role="group" aria-label="Button group with nested dropdown">
+            <div
+              className="btn-group mb-2"
+              style={{ width: "100%" }}
+              role="group"
+              aria-label="Button group with nested dropdown"
+            >
               <button
                 type="button"
                 className="btn btn-outline-primary no-shadow btn-block"
@@ -138,11 +141,18 @@ export default function HorizontalProductCard({ product }) {
               >
                 <i className="mdi mdi-tune"></i>
               </button>
-              <div class="btn-group btn-block mt-0" role="group">
-                <button id="btnGroupDrop1" type="button" class="btn btn-outline-primary dropdown-toggle no-shadow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div className="btn-group btn-block mt-0" role="group">
+                <button
+                  id="btnGroupDrop1"
+                  type="button"
+                  className="btn btn-outline-primary dropdown-toggle no-shadow"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
                   More
                 </button>
-                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <div className="dropdown-menu" aria-labelledby="btnGroupDrop1">
                   <a className="dropdown-item" href="#">
                     Action
                   </a>
@@ -162,7 +172,6 @@ export default function HorizontalProductCard({ product }) {
             <button type="button" className="btn btn-primary btn-block ">
               Save
             </button>
-
           </div>
         </div>
       </div>

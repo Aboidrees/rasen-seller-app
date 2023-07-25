@@ -1,8 +1,12 @@
 {
   "compilerOptions": {
+    "checkJs": true,
+    "jsx": "react",
     "paths": {
       "@/*": ["./app/*"],
-      "@components/*": ["./components/*"]
+      "@components/*": ["./components/*"],
+      "@assets/*": ["./public/assets/*"]
     }
-  }
+  },
+  "exclude": ["public"]
 }
