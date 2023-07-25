@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 // import "@assets/plugins/bootstrap/css/bootstrap.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
