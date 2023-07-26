@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import Icon from "@mdi/react";
 import { Button, Card, Col, Row, Image, Table } from "react-bootstrap";

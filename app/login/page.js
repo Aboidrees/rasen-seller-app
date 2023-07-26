@@ -42,11 +42,7 @@ export default function RegisterScreen() {
               <CheckBox label="Remember me" />
             </div>
             <div className="ml-auto">
-              <a
-                href="javascript:void(0)"
-                id="to-recover"
-                className="text-muted"
-              >
+              <a href="" id="to-recover" className="text-muted">
                 <i className="fa fa-lock m-r-5"></i> Forgot pwd?
               </a>
             </div>

@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 // import "@assets/plugins/bootstrap/css/bootstrap.min.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -13,6 +12,7 @@ import RightMenu from "@components/RightMenu";
 import LeftMenu from "@components/LeftMenu";
 import Footer from "@components/Footer";
 import Navbar from "@components/Navbar";
+import SSRProvider from "react-bootstrap/SSRProvider";
 
 export const metadata = {
   title: "Rasen - Seller Dashboard",
@@ -35,34 +35,35 @@ export default function RootLayout({ children }) {
       <Script src="/assets/plugins/c3-master/c3.min.js" />
       <Script src="/assets/js/dashboard1.js" />
       <Script src="/assets/plugins/styleswitcher/jQuery.style.switcher.js" />
-
-      <body className="fix-header fix-sidebar card-no-border">
-        <div className="preloader">
-          <svg className="circular" viewBox="25 25 50 50">
-            <circle
-              className="path"
-              cx="50"
-              cy="50"
-              r="20"
-              fill="none"
-              strokeWidth="2"
-              strokeMiterlimit="10"
-            />
-          </svg>
-        </div>
-        <div id="main-wrapper">
-          <Navbar />
-          <LeftMenu />
-          <div className="page-wrapper">
-            <div className="container-fluid">
-              <BreadCrumb />
-              {children}
-              <RightMenu />
-            </div>
-            <Footer />
+      <SSRProvider>
+        <body className="fix-header fix-sidebar card-no-border">
+          <div className="preloader">
+            <svg className="circular" viewBox="25 25 50 50">
+              <circle
+                className="path"
+                cx="50"
+                cy="50"
+                r="20"
+                fill="none"
+                strokeWidth="2"
+                strokeMiterlimit="10"
+              />
+            </svg>
           </div>
-        </div>
-      </body>
+          <div id="main-wrapper">
+            <Navbar />
+            <LeftMenu />
+            <div className="page-wrapper">
+              <div className="container-fluid">
+                <BreadCrumb />
+                {children}
+                <RightMenu />
+              </div>
+              <Footer />
+            </div>
+          </div>
+        </body>
+      </SSRProvider>
     </html>
   );
 }

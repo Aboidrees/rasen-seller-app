@@ -1,4 +1,3 @@
-"use client";
 import "@assets/plugins/dropzone-master/dist/dropzone.css";
 
 import React from "react";

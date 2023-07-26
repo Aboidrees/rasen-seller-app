@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import Icon from "@mdi/react";
 import { mdiFilter, mdiHumanEdit, mdiPlusCircle } from "@mdi/js";

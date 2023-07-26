@@ -53,7 +53,7 @@ export default function Navbar() {
             <li className="nav-item">
               <a
                 className="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark"
-                href="javascript:void(0)"
+                href=""
               >
                 <i className="mdi mdi-menu"></i>
               </a>
@@ -61,7 +61,7 @@ export default function Navbar() {
             <li className="nav-item">
               <a
                 className="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark"
-                href="javascript:void(0)"
+                href=""
               >
                 <i className="ti-menu"></i>
               </a>
@@ -72,7 +72,7 @@ export default function Navbar() {
             <li className="nav-item hidden-sm-down search-box">
               <a
                 className="nav-link hidden-sm-down text-muted waves-effect waves-dark"
-                href="javascript:void(0)"
+                href=""
               >
                 <i className="ti-search"></i>
               </a>
@@ -298,31 +298,31 @@ export default function Navbar() {
                     {/* List style */}
                     <ul className="list-style-none">
                       <li>
-                        <a href="javascript:void(0)">
+                        <a href="">
                           <i className="fa fa-check text-success"></i>
                           You can give link
                         </a>
                       </li>
                       <li>
-                        <a href="javascript:void(0)">
+                        <a href="">
                           <i className="fa fa-check text-success"></i>
                           Give link
                         </a>
                       </li>
                       <li>
-                        <a href="javascript:void(0)">
+                        <a href="">
                           <i className="fa fa-check text-success"></i>
                           Another Give link
                         </a>
                       </li>
                       <li>
-                        <a href="javascript:void(0)">
+                        <a href="">
                           <i className="fa fa-check text-success"></i>
                           Forth link
                         </a>
                       </li>
                       <li>
-                        <a href="javascript:void(0)">
+                        <a href="">
                           <i className="fa fa-check text-success"></i>
                           Another fifth link
                         </a>
@@ -419,10 +419,7 @@ export default function Navbar() {
                     </div>
                   </li>
                   <li>
-                    <a
-                      className="nav-link text-center"
-                      href="javascript:void(0);"
-                    >
+                    <a className="nav-link text-center" href=";">
                       <strong>Check all notifications</strong>
                       <i className="fa fa-angle-right"></i>
                     </a>
@@ -534,10 +531,7 @@ export default function Navbar() {
                     </div>
                   </li>
                   <li>
-                    <a
-                      className="nav-link text-center"
-                      href="javascript:void(0);"
-                    >
+                    <a className="nav-link text-center" href=";">
                       <strong>See all e-Mails</strong>
                       <i className="fa fa-angle-right"></i>
                     </a>

@@ -7,7 +7,7 @@ export default function breadcrumb() {
         <h3 className="text-themecolor">Home</h3>
         <ol className="breadcrumb">
           <li className="breadcrumb-item">
-            <a href="javascript:void(0)">Dashboard</a>
+            <a href="">Dashboard</a>
           </li>
           <li className="breadcrumb-item active">Home</li>
         </ol>
